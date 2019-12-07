@@ -59,7 +59,7 @@ public class Recaudaciones implements Serializable {
 		return observacion;
 	}
 
-	public String setObservacion(String observacion){
+	public void setObservacion(String observacion){
 		this.observacion=observacion;
 	}
 
