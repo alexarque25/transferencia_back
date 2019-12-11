@@ -17,7 +17,6 @@ public class RecaudacionesRowMapper implements RowMapper<Recaudaciones> {
 		recaudaciones.setConcepto(row.getString("concepto"));
 		recaudaciones.setDni(row.getString("dni"));
 		recaudaciones.setNombre(row.getString("nombre"));
-		recaudaciones.setObservacion(row.getString("observacion"));
 		recaudaciones.setMoneda(row.getString("moneda"));
 		recaudaciones.setNumero(row.getString("numero"));
 		recaudaciones.setImporte(row.getInt("importe"));
@@ -25,6 +24,7 @@ public class RecaudacionesRowMapper implements RowMapper<Recaudaciones> {
 		recaudaciones.setCodAlum(row.getString("codAlum"));	
 		recaudaciones.setIdProg(row.getInt("idProg"));		
 		recaudaciones.setSiglaProg(row.getString("siglaProg"));
+		recaudaciones.setObservacion(row.getString("observacion"));
 		return recaudaciones;
 	}
 }
