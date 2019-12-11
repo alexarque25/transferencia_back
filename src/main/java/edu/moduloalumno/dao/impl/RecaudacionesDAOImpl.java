@@ -143,6 +143,7 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 				"f.nombre,  " + 
 				"r.moneda, " + 
 				"r.importe,  " + 
+				"r.observacion, " +
 				"r.fecha,  " + 
 				"r.cod_alumno as codAlum, " + 
 				"p.id_programa as idProg,   " + 
@@ -195,6 +196,7 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 				"f.nombre,  " +
 				"r.moneda, " +
 				"r.importe,  " +
+				"r.observacion, " +
 				"r.fecha,  " +
 				"r.cod_alumno as codAlum, " +
 				"r.id_programa as idProg,  " +
@@ -223,6 +225,7 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 				"f.nombre,  " + 
 				"r.moneda, " + 
 				"r.importe,  " + 
+				"r.observacion, " +
 				"r.fecha,  " + 
 				"r.cod_alumno as codAlum," + 
 				"r.id_programa as idProg,   " +
