@@ -307,4 +307,39 @@ public class RecaudacionesController {
 			logger.info("< getRecaudacionesByNomApe [Recaudaciones]");
 			return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.OK);
 		}
+
+
+		@RequestMapping(value = "/listarPendientes/{fechaInicial}/{fechaFinal}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+		public ResponseEntity<List<Recaudaciones>> getObservacionesByFechas(@PathVariable("fechaInicial") String fechaInicial,
+				@PathVariable("fechaFinal") String fechaFinal) {
+		 
+//		 
+
+			List<Recaudaciones> list = null;
+			Date fInicial;
+			Date fFinal;
+
+			DateFormat formateador = new SimpleDateFormat("yyyy-MM-dd");
+
+			try {
+
+				fInicial = formateador.parse(fechaInicial);
+				fFinal = formateador.parse(fechaFinal);
+
+				list = recaudacionesService.getObservacionesEntreFechas(fInicial, fFinal);
+
+				if (list == null) {
+					list = new ArrayList<Recaudaciones>();
+				}
+
+			} catch (Exception e) {
+				logger.error("Unexpected Exception caught.", e);
+				return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+
+//			
+			return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.OK);
+		}
+
+
 }
