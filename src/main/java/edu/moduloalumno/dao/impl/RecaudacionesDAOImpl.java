@@ -242,7 +242,7 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 	}
 
 	@Override
-	List<Recaudaciones> getObservacionesEntreFechas(Date fechaInicial, Date fechaFinal){
+	public List<Recaudaciones> getObservacionesEntreFechas(Date fechaInicial, Date fechaFinal){
 	String sql = "select " + 
 				"r.id_rec,  " + 
 				"r.id_alum,  " + 
