@@ -309,7 +309,7 @@ public class RecaudacionesController {
 		}
 
 
-		/*@RequestMapping(value = "/listarPendientes/{fechaInicial}/{fechaFinal}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+		@RequestMapping(value = "/listarObservaciones/{fechaInicial}/{fechaFinal}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 		public ResponseEntity<List<Recaudaciones>> getObservacionesByFechas(@PathVariable("fechaInicial") String fechaInicial,
 				@PathVariable("fechaFinal") String fechaFinal) {
 		 
@@ -339,7 +339,7 @@ public class RecaudacionesController {
 
 //			
 			return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.OK);
-		}*/
+		}
 
 
 }
