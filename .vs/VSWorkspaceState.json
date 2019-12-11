@@ -6,7 +6,16 @@
     "\\src\\main\\java",
     "\\src\\main\\java\\edu",
     "\\src\\main\\java\\edu\\moduloalumno",
-    "\\target\\classes"
+    "\\src\\main\\java\\edu\\moduloalumno\\api",
+    "\\src\\main\\java\\edu\\moduloalumno\\component",
+    "\\src\\main\\java\\edu\\moduloalumno\\dao",
+    "\\src\\main\\java\\edu\\moduloalumno\\dao\\impl",
+    "\\src\\main\\java\\edu\\moduloalumno\\dao\\mse",
+    "\\src\\main\\java\\edu\\moduloalumno\\entity",
+    "\\src\\main\\java\\edu\\moduloalumno\\service",
+    "\\src\\main\\java\\edu\\moduloalumno\\service\\impl",
+    "\\src\\main\\java\\edu\\moduloalumno\\util"
   ],
+  "SelectedNode": "\\src\\main\\java\\edu\\moduloalumno\\api\\AlumnoBeneficioController.java",
   "PreviewInSolutionExplorer": false
 }

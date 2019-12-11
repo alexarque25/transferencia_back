@@ -35,6 +35,8 @@ public class RecaudacionesJOINAlumnoJOINConceptoJOINFacultad {
     private String anio_ingreso;
     
     private Integer idPrograma;
+	
+
     
     private String nomPrograma;
     
@@ -118,6 +120,15 @@ public class RecaudacionesJOINAlumnoJOINConceptoJOINFacultad {
 
 	public void setNumero(String numero) {
 		this.numero = numero;
+	}
+
+
+	public String getObservacion(){
+		return observacion;
+	}
+
+	public void setObservacion(String observacion){
+		this.observacion=observacion;
 	}
 
 	public String getNombre() {
