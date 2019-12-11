@@ -308,12 +308,11 @@ public class RecaudacionesController {
 			return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.OK);
 		}
 
-
 		@RequestMapping(value = "/listarObservaciones/{fechaInicial}/{fechaFinal}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-		public ResponseEntity<List<Recaudaciones>> getObservacionesByFechas(@PathVariable("fechaInicial") String fechaInicial,
+		public ResponseEntity<List<Recaudaciones>> getObservacionesByDate(@PathVariable("fechaInicial") String fechaInicial,
 				@PathVariable("fechaFinal") String fechaFinal) {
 		 
-//		 
+//		 System.out.print("BUSCANDO PENDIENTES: ");
 
 			List<Recaudaciones> list = null;
 			Date fInicial;
@@ -337,9 +336,7 @@ public class RecaudacionesController {
 				return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.INTERNAL_SERVER_ERROR);
 			}
 
-//			
+//			logger.info("< getRecaudacionesByStartDateBetween [Recaudaciones]");
 			return new ResponseEntity<List<Recaudaciones>>(list, HttpStatus.OK);
 		}
-
-
 }
