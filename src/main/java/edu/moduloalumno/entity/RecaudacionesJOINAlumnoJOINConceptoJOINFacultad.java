@@ -203,13 +203,7 @@ public class RecaudacionesJOINAlumnoJOINConceptoJOINFacultad {
 		this.codAlumno = codAlumno;
 	}
 
-	public String getObservacion() {
-		return observacion;
-	}
-
-	public void setObservacion(String observacion) {
-		this.observacion = observacion;
-	}
+	
 	
 	public Integer getIdconcepto() {
 		return idconcepto;
