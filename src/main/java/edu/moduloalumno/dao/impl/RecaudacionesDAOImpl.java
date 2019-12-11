@@ -266,6 +266,6 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 				"where length(trim(observacion))>10 " + 
 				"order by r.fecha";
 		RowMapper<Recaudaciones> rowMapper = new RecaudacionesRowMapper();
-		return this.jdbcTemplate.query(sql, rowMapper, nombresApellido);
+		return this.jdbcTemplate.query(sql, rowMapper, fechaInicial, fechaFinal);
 	}
 }
