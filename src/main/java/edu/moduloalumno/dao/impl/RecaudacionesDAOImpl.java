@@ -263,7 +263,7 @@ public class RecaudacionesDAOImpl implements IRecaudacionesDAO {
 				"join concepto c on (r.id_concepto = c.id_concepto) " + 
 				"join facultad f on (a.id_facultad = f.id_facultad) " + 
 				"left join programa p on (p.id_programa = r.id_programa) " + 
-				"where length(trim(observacion))>10 " + 
+				"where length(trim(r.observacion))>10 " + 
 				"order by r.fecha";
 		RowMapper<Recaudaciones> rowMapper = new RecaudacionesRowMapper();
 		return this.jdbcTemplate.query(sql, rowMapper, fechaInicial, fechaFinal);
